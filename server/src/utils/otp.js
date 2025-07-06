@@ -4,8 +4,9 @@ export const generateOtp = () => {
 };
 
 // Generate expiry time for OTP (default 5 minutes)
-export const otpExpiryTime = (minutes = 5) => {
+export const otpExpiryTime = (minutes = 60) => {
   const expiry = new Date();
   expiry.setMinutes(expiry.getMinutes() + minutes);
   return expiry;
 };
+

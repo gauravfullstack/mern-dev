@@ -1,5 +1,5 @@
 import { User } from "../models/user.model.js";
-import { OTP } from "../models/auth.model.js";
+import { OTP } from "../models/otp.model.js";
 import { otpExpiryTime } from "../utils/otp.js";
 
 export const registerUser = async (req, res) => {
